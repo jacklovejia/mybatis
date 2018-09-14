@@ -1,0 +1,22 @@
+db: world
+spring:
+  profiles:
+    active: dev
+    include: druid
+  redis:
+    host: localhost
+    port: 6379
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/${db}?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.com.jack.entity
+  configLocation: classpath:mybatis-config.xml
+
+logging:
+  path: ./logs
+  level:
+    com.abc.dao: debug
