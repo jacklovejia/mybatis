@@ -1,37 +1,24 @@
 package com.jack.controller;
 
-import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.jack.entity.Jack;
-import com.jack.entity.JackExample;
-import com.jack.mapper.JackMapper;
+import com.jack.service.JackService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
+@Slf4j
 @RestController
 public class Test {
-
     @Autowired
-    private JackMapper jackMapper;
+    private JackService jackService;
 
-    @RequestMapping("/test")
-    public String test() {
-        return "";
+    @GetMapping("/test01")
+    public String test01() {
+        Map<String, String> dataMap = new HashMap<>();
+        return jackService.getList(dataMap).toString();
     }
 
-    @RequestMapping("/testPage")
-    public JSONObject tsetPage() {
-        JSONObject jsonObject = new JSONObject();
-        JackExample example = new JackExample();
-        PageHelper.startPage(1, 4);
-        List<Jack> list = jackMapper.selectByExample(example);
-        PageInfo<Jack> p = new PageInfo<>(list);
-        jsonObject.put("page", p);
-        jsonObject.put("data", list);
-        return jsonObject;
-    }
 }

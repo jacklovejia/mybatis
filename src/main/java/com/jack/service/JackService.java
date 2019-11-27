@@ -1,12 +1,10 @@
-package com.jack.mapper;
+package com.jack.service;
 
 import com.jack.entity.Jack;
-import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 import java.util.Map;
 
-@Mapper
-public interface JackMapper {
+public interface JackService {
     List<Jack> getList(Map<String, String> paramMap);
 }

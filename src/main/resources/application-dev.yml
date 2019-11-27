@@ -1,4 +1,4 @@
-db: world
+db: test
 server:
   port: 8888
   servlet:
@@ -10,5 +10,6 @@ spring:
   datasource:
     druid:
       url: jdbc:mysql://127.0.0.1:3306/${db}?characterEncoding=UTF-8&useSSL=false
+      driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: root
