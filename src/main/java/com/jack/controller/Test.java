@@ -17,6 +17,7 @@ public class Test {
 
     @GetMapping("/test01")
     public String test01() {
+        System.out.println("123");
         Map<String, String> dataMap = new HashMap<>();
         return jackService.getList(dataMap).toString();
     }
