@@ -21,5 +21,12 @@ public class Test {
         Map<String, String> dataMap = new HashMap<>();
         return jackService.getList(dataMap).toString();
     }
+    @GetMapping("/test02")
+    public String test02() {
+        System.out.println("123");
+        Map<String, String> dataMap = new HashMap<>();
+        return jackService.getList(dataMap).toString();
+    }
+
 
 }
