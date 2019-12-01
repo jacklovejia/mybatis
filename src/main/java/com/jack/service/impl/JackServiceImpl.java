@@ -18,4 +18,9 @@ public class JackServiceImpl implements JackService {
     public List<Jack> getList(Map<String, String> paramMap) {
         return jackMapper.getList(paramMap);
     }
+
+    @Override
+    public Integer update(Map<String, String> paramMap) {
+        return jackMapper.update(paramMap);
+    }
 }

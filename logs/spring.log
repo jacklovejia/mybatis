@@ -1326,3 +1326,204 @@ com.alibaba.fastjson.JSONException: syntax error, pos 1
 2019-11-27 10:40:46.460 DEBUG 17248 --- [http-nio-8888-exec-2] com.jack.mapper.JackMapper.getList       : ==>  Preparing: select * from jack WHERE status = 1 
 2019-11-27 10:40:46.481 DEBUG 17248 --- [http-nio-8888-exec-2] com.jack.mapper.JackMapper.getList       : ==> Parameters: 
 2019-11-27 10:40:46.496 DEBUG 17248 --- [http-nio-8888-exec-2] com.jack.mapper.JackMapper.getList       : <==      Total: 1
+2019-11-27 16:38:17.061  INFO 6060 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 6060 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:38:17.062  INFO 6060 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:38:17.145  INFO 6060 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1130520d: startup date [Wed Nov 27 16:38:17 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:38:18.425  INFO 6060 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:38:18.912  INFO 6060 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:38:19.397  INFO 6060 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:38:19.530  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1130520d: startup date [Wed Nov 27 16:38:17 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:38:19.596  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:38:19.598  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:38:19.599  INFO 6060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:38:19.621  INFO 6060 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:38:19.621  INFO 6060 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:38:19.814  INFO 6060 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 3.445 seconds (JVM running for 5.595)
+2019-11-27 16:38:20.018 DEBUG 6060 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1 , where id = ? 
+2019-11-27 16:38:20.045 DEBUG 6060 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: null
+2019-11-27 16:38:20.074  INFO 6060 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-11-27 16:38:20.116  INFO 6060 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1130520d: startup date [Wed Nov 27 16:38:17 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:38:20.129  INFO 6060 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:39:51.470  INFO 11092 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 11092 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:39:51.471  INFO 11092 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:39:51.500  INFO 11092 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b266842: startup date [Wed Nov 27 16:39:51 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:39:52.447  INFO 11092 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:39:52.778  INFO 11092 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:39:53.161  INFO 11092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:39:53.295  INFO 11092 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1b266842: startup date [Wed Nov 27 16:39:51 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:39:53.346  INFO 11092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:39:53.349  INFO 11092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:39:53.349  INFO 11092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:39:53.371  INFO 11092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:39:53.371  INFO 11092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:39:53.597  INFO 11092 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.707 seconds (JVM running for 3.731)
+2019-11-27 16:39:53.730 DEBUG 11092 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1, where id = ? 
+2019-11-27 16:39:53.751 DEBUG 11092 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: null
+2019-11-27 16:39:53.765  INFO 11092 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-11-27 16:39:53.804  INFO 11092 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b266842: startup date [Wed Nov 27 16:39:51 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:39:53.808  INFO 11092 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:40:16.500  INFO 10516 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 10516 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:40:16.500  INFO 10516 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:40:16.558  INFO 10516 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:40:16 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:40:17.433  INFO 10516 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:40:17.752  INFO 10516 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:40:18.128  INFO 10516 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:40:18.257  INFO 10516 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:40:16 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:40:18.309  INFO 10516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:40:18.312  INFO 10516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:40:18.312  INFO 10516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:40:18.335  INFO 10516 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:40:18.335  INFO 10516 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:40:18.523  INFO 10516 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.515 seconds (JVM running for 3.594)
+2019-11-27 16:40:18.654 DEBUG 10516 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1, where id = ? 
+2019-11-27 16:40:18.675 DEBUG 10516 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: null
+2019-11-27 16:40:18.690  INFO 10516 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-11-27 16:40:18.725  INFO 10516 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:40:16 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:40:18.729  INFO 10516 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:41:11.577  INFO 10796 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 10796 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:41:11.577  INFO 10796 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:41:11.601  INFO 10796 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b266842: startup date [Wed Nov 27 16:41:11 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:41:12.449  INFO 10796 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:41:12.776  INFO 10796 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:41:13.187  INFO 10796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:41:13.312  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1b266842: startup date [Wed Nov 27 16:41:11 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:41:13.363  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:41:13.366  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:41:13.366  INFO 10796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:41:13.386  INFO 10796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:41:13.386  INFO 10796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:41:13.578  INFO 10796 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.319 seconds (JVM running for 3.383)
+2019-11-27 16:41:13.704 DEBUG 10796 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1, province = 123, where id = ? 
+2019-11-27 16:41:13.727 DEBUG 10796 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: null
+2019-11-27 16:41:13.741  INFO 10796 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-11-27 16:41:13.776  INFO 10796 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b266842: startup date [Wed Nov 27 16:41:11 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:41:13.781  INFO 10796 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:44:25.603  INFO 9244 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 9244 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:44:25.603  INFO 9244 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:44:25.659  INFO 9244 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:44:25 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:44:26.483  INFO 9244 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:44:26.801  INFO 9244 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:44:27.178  INFO 9244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:44:27.306  INFO 9244 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:44:25 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:44:27.358  INFO 9244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:44:27.360  INFO 9244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:44:27.361  INFO 9244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:44:27.380  INFO 9244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:44:27.380  INFO 9244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:44:27.574  INFO 9244 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.401 seconds (JVM running for 3.498)
+2019-11-27 16:44:27.709 DEBUG 9244 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1, province = 123 where id = ? 
+2019-11-27 16:44:27.730 DEBUG 9244 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: null
+2019-11-27 16:44:27.740 DEBUG 9244 --- [main] com.jack.mapper.JackMapper.update        : <==    Updates: 0
+2019-11-27 16:44:27.745  INFO 9244 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:44:25 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:44:27.748  INFO 9244 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:44:46.126  INFO 9888 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 9888 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:44:46.127  INFO 9888 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:44:46.151  INFO 9888 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:44:46 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:44:47.057  INFO 9888 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:44:47.368  INFO 9888 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:44:47.741  INFO 9888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:44:47.867  INFO 9888 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:44:46 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:44:47.920  INFO 9888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:44:47.922  INFO 9888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:44:47.923  INFO 9888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:44:47.943  INFO 9888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:44:47.943  INFO 9888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:44:48.133  INFO 9888 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.448 seconds (JVM running for 3.754)
+2019-11-27 16:44:48.265 DEBUG 9888 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1 where id = ? 
+2019-11-27 16:44:48.286 DEBUG 9888 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: null
+2019-11-27 16:44:48.290 DEBUG 9888 --- [main] com.jack.mapper.JackMapper.update        : <==    Updates: 0
+2019-11-27 16:44:48.295  INFO 9888 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:44:46 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:44:48.299  INFO 9888 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:45:32.486  INFO 9296 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 9296 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:45:32.487  INFO 9296 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:45:32.509  INFO 9296 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1130520d: startup date [Wed Nov 27 16:45:32 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:45:33.233  INFO 9296 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:45:33.546  INFO 9296 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:45:33.911  INFO 9296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:45:34.035  INFO 9296 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1130520d: startup date [Wed Nov 27 16:45:32 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:45:34.091  INFO 9296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:45:34.093  INFO 9296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:45:34.094  INFO 9296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:45:34.113  INFO 9296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:45:34.113  INFO 9296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:45:34.313  INFO 9296 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.542 seconds (JVM running for 3.854)
+2019-11-27 16:45:34.445 DEBUG 9296 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1, province = 123 where id = ? 
+2019-11-27 16:45:34.468 DEBUG 9296 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: null
+2019-11-27 16:45:34.474 DEBUG 9296 --- [main] com.jack.mapper.JackMapper.update        : <==    Updates: 0
+2019-11-27 16:45:34.483  INFO 9296 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1130520d: startup date [Wed Nov 27 16:45:32 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:45:34.487  INFO 9296 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:46:04.190  INFO 2892 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 2892 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:46:04.191  INFO 2892 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:46:04.247  INFO 2892 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b266842: startup date [Wed Nov 27 16:46:04 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:46:05.233  INFO 2892 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:46:05.550  INFO 2892 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:46:05.935  INFO 2892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:46:06.064  INFO 2892 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1b266842: startup date [Wed Nov 27 16:46:04 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:46:06.118  INFO 2892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:46:06.121  INFO 2892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:46:06.121  INFO 2892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:46:06.143  INFO 2892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:46:06.143  INFO 2892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:46:06.340  INFO 2892 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.522 seconds (JVM running for 3.561)
+2019-11-27 16:46:06.476 DEBUG 2892 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1, province = 123 where id = ? 
+2019-11-27 16:46:06.498 DEBUG 2892 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: 1(String)
+2019-11-27 16:46:06.504 DEBUG 2892 --- [main] com.jack.mapper.JackMapper.update        : <==    Updates: 1
+2019-11-27 16:46:06.509  INFO 2892 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b266842: startup date [Wed Nov 27 16:46:04 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:46:06.513  INFO 2892 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:51:32.815  INFO 9376 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 9376 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:51:32.816  INFO 9376 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:51:32.844  INFO 9376 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@463fd068: startup date [Wed Nov 27 16:51:32 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:51:33.657  INFO 9376 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:51:33.972  INFO 9376 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:51:34.392  INFO 9376 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:51:34.533  INFO 9376 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@463fd068: startup date [Wed Nov 27 16:51:32 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:51:34.588  INFO 9376 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:51:34.591  INFO 9376 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:51:34.591  INFO 9376 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:51:34.615  INFO 9376 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:51:34.615  INFO 9376 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:51:34.805  INFO 9376 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.714 seconds (JVM running for 3.821)
+2019-11-27 16:51:34.937 DEBUG 9376 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1, province = 123 where id = ? 
+2019-11-27 16:51:34.959 DEBUG 9376 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: 1(String)
+2019-11-27 16:51:34.963 DEBUG 9376 --- [main] com.jack.mapper.JackMapper.update        : <==    Updates: 1
+2019-11-27 16:51:34.964  INFO 9376 --- [main] com.jack.TestMybatis                     : test011
+2019-11-27 16:51:34.968  INFO 9376 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@463fd068: startup date [Wed Nov 27 16:51:32 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:51:34.972  INFO 9376 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:53:57.920  INFO 7360 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 7360 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:53:57.921  INFO 7360 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:53:57.949  INFO 7360 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@463fd068: startup date [Wed Nov 27 16:53:57 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:53:58.752  INFO 7360 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:53:59.131  INFO 7360 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:53:59.562  INFO 7360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:53:59.692  INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@463fd068: startup date [Wed Nov 27 16:53:57 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:53:59.779  INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:53:59.783  INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:53:59.784  INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:53:59.805  INFO 7360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:53:59.805  INFO 7360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:54:00.048  INFO 7360 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.593 seconds (JVM running for 3.704)
+2019-11-27 16:54:00.201 DEBUG 7360 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1 WHERE name = ? 
+2019-11-27 16:54:00.224 DEBUG 7360 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: 1(String)
+2019-11-27 16:54:00.238 DEBUG 7360 --- [main] com.jack.mapper.JackMapper.update        : <==    Updates: 2
+2019-11-27 16:54:00.239  INFO 7360 --- [main] com.jack.TestMybatis                     : test02:2
+2019-11-27 16:54:00.245  INFO 7360 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@463fd068: startup date [Wed Nov 27 16:53:57 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:54:00.250  INFO 7360 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-27 16:57:51.944  INFO 9008 --- [main] com.jack.TestMybatis                     : Starting TestMybatis on USER-QPE6TV217T with PID 9008 (started by Administrator in F:\jack\mybatis)
+2019-11-27 16:57:51.944  INFO 9008 --- [main] com.jack.TestMybatis                     : The following profiles are active: druid,dev
+2019-11-27 16:57:51.968  INFO 9008 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:57:51 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:57:52.795  INFO 9008 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-27 16:57:53.108  INFO 9008 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-27 16:57:53.522  INFO 9008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:57:53.663  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:57:51 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:57:53.717  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test01],methods=[GET]}" onto public java.lang.String com.jack.controller.Test.test01()
+2019-11-27 16:57:53.719  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 16:57:53.719  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 16:57:53.740  INFO 9008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:57:53.741  INFO 9008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 16:57:53.932  INFO 9008 --- [main] com.jack.TestMybatis                     : Started TestMybatis in 2.311 seconds (JVM running for 3.439)
+2019-11-27 16:57:54.057 DEBUG 9008 --- [main] com.jack.mapper.JackMapper.update        : ==>  Preparing: update jack SET status = 1 WHERE id = ? 
+2019-11-27 16:57:54.078 DEBUG 9008 --- [main] com.jack.mapper.JackMapper.update        : ==> Parameters: 1(String)
+2019-11-27 16:57:54.082 DEBUG 9008 --- [main] com.jack.mapper.JackMapper.update        : <==    Updates: 1
+2019-11-27 16:57:54.083  INFO 9008 --- [main] com.jack.TestMybatis                     : test01:1
+2019-11-27 16:57:54.086  INFO 9008 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@895e367: startup date [Wed Nov 27 16:57:51 GMT+08:00 2019]; root of context hierarchy
+2019-11-27 16:57:54.090  INFO 9008 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
