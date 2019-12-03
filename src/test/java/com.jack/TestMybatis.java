@@ -10,6 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
 import java.util.Map;
+
 @Slf4j
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -21,17 +22,18 @@ public class TestMybatis {
     @Test
     public void test01() {
         Map<String, String> paramMap = new HashMap<>();
-        paramMap.put("province","0");
-        paramMap.put("id","1");
+        paramMap.put("province", "0");
+        paramMap.put("id", "1");
         Integer update = jackService.update(paramMap);
-        log.info("test01:" +update);
+        log.info("test01:" + update);
     }
+
     @Test
     public void test02() {
         Map<String, String> paramMap = new HashMap<>();
-        paramMap.put("name","1");
+        paramMap.put("name", "1");
         Integer update = jackService.update(paramMap);
-        log.info("test02:" +update);
+        log.info("test02:" + update);
     }
 
 }
