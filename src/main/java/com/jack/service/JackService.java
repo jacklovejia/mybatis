@@ -9,4 +9,6 @@ public interface JackService {
     List<Jack> getList(Map<String, String> paramMap);
 
     Integer update(Map<String, String> paramMap);
+
+    void insert(Jack jack);
 }

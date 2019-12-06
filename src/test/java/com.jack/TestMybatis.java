@@ -1,5 +1,6 @@
 package com.jack;
 
+import com.jack.entity.Jack;
 import com.jack.service.JackService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -34,6 +35,13 @@ public class TestMybatis {
         paramMap.put("name", "1");
         Integer update = jackService.update(paramMap);
         log.info("test02:" + update);
+    }
+    @Test
+    public void test03() {
+        Map<String, String> paramMap = new HashMap<>();
+        Jack jack = new Jack("222","2","2","2");
+        jackService.insert(jack);
+
     }
 
 }

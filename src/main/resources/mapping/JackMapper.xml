@@ -36,4 +36,7 @@
             </if>
         </where>
     </update>
+    <insert id="insert" parameterType="com.jack.entity.Jack">
+        insert into jack (name, status, province, company) values (#{name},#{status},#{province},#{company})
+    </insert>
 </mapper>

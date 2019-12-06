@@ -23,4 +23,9 @@ public class JackServiceImpl implements JackService {
     public Integer update(Map<String, String> paramMap) {
         return jackMapper.update(paramMap);
     }
+
+    @Override
+    public void insert(Jack jack) {
+        jackMapper.insert(jack);
+    }
 }
