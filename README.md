@@ -6,5 +6,6 @@ https://mp.weixin.qq.com/s?__biz=MzI4Njg5MDA5NA==&mid=2247486194&idx=3&sn=608f1e
 #weixin
 参考地址: https://www.jianshu.com/p/f039cff86937
 Ngrok 文件件下为客户端
+ngrok 使用手册: http://www.ngrok.cc/_book/
 网址:  http://www.ngrok.cc/login 登陆 查看服务 映射
 公众号地址: https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
