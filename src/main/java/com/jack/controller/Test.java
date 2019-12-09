@@ -33,13 +33,17 @@ public class Test {
 
     @GetMapping("/test03")
     public void test03(){
-
+        insert();
     }
 
 
     @Transactional
     public void insert() {
-        Jack jack = new Jack("222","2","2","2");
-        jackService.insert(jack);
+        jackService.delete();
+        int a = 10/0;
+        jackService.insert(new Jack("111","1","1","1"));
+        jackService.insert(new Jack("222","2","2","2"));
+        jackService.insert(new Jack("333","3","3","3"));
+        jackService.insert(new Jack("444","4","4","4"));
     }
 }

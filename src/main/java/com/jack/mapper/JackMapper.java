@@ -13,4 +13,6 @@ public interface JackMapper {
     Integer update(Map<String, String> paramMap);
 
     void insert(Jack jack);
+
+    void delete();
 }

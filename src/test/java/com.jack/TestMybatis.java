@@ -38,10 +38,11 @@ public class TestMybatis {
     }
     @Test
     public void test03() {
-        Map<String, String> paramMap = new HashMap<>();
-        Jack jack = new Jack("222","2","2","2");
-        jackService.insert(jack);
-
+//        Map<String, String> paramMap = new HashMap<>();
+        jackService.insert(new Jack("111","1","1","1"));
+        jackService.insert(new Jack("222","2","2","2"));
+        jackService.insert(new Jack("333","3","3","3"));
+        jackService.insert(new Jack("444","4","4","4"));
     }
 
 }

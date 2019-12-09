@@ -28,4 +28,9 @@ public class JackServiceImpl implements JackService {
     public void insert(Jack jack) {
         jackMapper.insert(jack);
     }
+
+    @Override
+    public void delete() {
+        jackMapper.delete();
+    }
 }

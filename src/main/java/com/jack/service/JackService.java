@@ -11,4 +11,6 @@ public interface JackService {
     Integer update(Map<String, String> paramMap);
 
     void insert(Jack jack);
+
+    void delete();
 }
