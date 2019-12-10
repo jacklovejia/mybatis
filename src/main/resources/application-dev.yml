@@ -14,5 +14,6 @@ spring:
       username: root
       password: root
   thymeleaf:
-    prefix: classpath:/templates/
+#    prefix: classpath:/templates/  默认就是这个
     suffix: .html
+    cache: false

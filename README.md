@@ -9,3 +9,10 @@ Ngrok 文件件下为客户端
 ngrok 使用手册: http://www.ngrok.cc/_book/
 网址:  http://www.ngrok.cc/login 登陆 查看服务 映射
 公众号地址: https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
+
+
+
+
+热部署
+ Registry （或者双击Shift搜索Registry...），然后勾选compiler.automake.allow.when.app.running 。
+ 设置中 Build->Compiler 也要勾选上Build Project automatically 
