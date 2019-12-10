@@ -39,8 +39,14 @@ public class Test {
 
     @Transactional
     public void insert() {
+        a();
+    }
+
+    public void a(){
         jackService.delete();
-        int a = 10/0;
+        if(true){
+            throw new RuntimeException();
+        }
         jackService.insert(new Jack("111","1","1","1"));
         jackService.insert(new Jack("222","2","2","2"));
         jackService.insert(new Jack("333","3","3","3"));

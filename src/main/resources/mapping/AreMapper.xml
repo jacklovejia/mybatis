@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jack.mapper.AreMapper">
+
+    <select id="getList" parameterType="map" resultType="com.jack.entity.Are">
+        select * from are
+    </select>
+
+    <insert id="insert" parameterType="com.jack.entity.Are">
+        insert into are (name) values (#{name})
+    </insert>
+
+    <delete id="delete" >
+        delete from are
+    </delete>
+</mapper>
