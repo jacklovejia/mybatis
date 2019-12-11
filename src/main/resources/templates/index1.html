@@ -6,9 +6,8 @@
 <body>
 <h2>list</h2>
 <div th:each="jack:${list}">
-<!--    <input type="hidden" name="userId" th:value="${jack.entity.Jack.}"/>-->
-<!--    用户姓名：<input type="text" name="password" th:value="${jack.username}"/>-->
-<!--    登录密码：<input type="text" name="username" th:value="${jack.status}"/>-->
+    用户姓名：<input type="text" name="password" th:value="${jack}"/>
+    登录密码：<input type="text" name="username" th:value="${jack}"/>
 </div>
 </body>
 </html>

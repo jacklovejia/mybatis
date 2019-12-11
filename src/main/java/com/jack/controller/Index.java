@@ -25,6 +25,7 @@ public class Index {
     @RequestMapping("/index1")
     public String index1(Model model) {
         List<Jack> list = jackService.getList(null);
+        log.info("list:"+list);
         model.addAttribute("list", "list");
         return "index1";
     }
