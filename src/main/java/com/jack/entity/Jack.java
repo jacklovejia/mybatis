@@ -1,8 +1,10 @@
 package com.jack.entity;
 
 import lombok.Data;
+import lombok.ToString;
 
 @Data
+@ToString
 public class Jack {
 
     private Long id;
